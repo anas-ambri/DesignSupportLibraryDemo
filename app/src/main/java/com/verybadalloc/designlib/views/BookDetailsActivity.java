@@ -1,4 +1,4 @@
-package com.verybadalloc.books.views;
+package com.verybadalloc.designlib.views;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,8 +6,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
-import com.verybadalloc.books.R;
-import com.verybadalloc.books.model.Book;
+import com.verybadalloc.designlib.R;
+import com.verybadalloc.designlib.model.Book;
 
 
 /**

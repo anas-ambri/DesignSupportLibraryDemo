@@ -1,11 +1,11 @@
-package com.verybadalloc.books.presenters;
+package com.verybadalloc.designlib.presenters;
 
 
 import com.hannesdorfmann.mosby.mvp.MvpBasePresenter;
-import com.verybadalloc.books.model.Book;
-import com.verybadalloc.books.network.DataCallback;
-import com.verybadalloc.books.network.DataFetcher;
-import com.verybadalloc.books.views.BooksListView;
+import com.verybadalloc.designlib.model.Book;
+import com.verybadalloc.designlib.network.DataCallback;
+import com.verybadalloc.designlib.network.DataFetcher;
+import com.verybadalloc.designlib.views.BooksListView;
 
 /**
  * Created by aambri on 15-06-09.

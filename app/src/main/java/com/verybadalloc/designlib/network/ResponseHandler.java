@@ -1,4 +1,4 @@
-package com.verybadalloc.books.network;
+package com.verybadalloc.designlib.network;
 
 import com.loopj.android.http.AsyncHttpResponseHandler;
 

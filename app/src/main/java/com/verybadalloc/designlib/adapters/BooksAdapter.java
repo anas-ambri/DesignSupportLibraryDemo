@@ -1,8 +1,8 @@
-package com.verybadalloc.books.adapters;
+package com.verybadalloc.designlib.adapters;
 
 import android.content.Context;
 
-import com.verybadalloc.books.model.Book;
+import com.verybadalloc.designlib.model.Book;
 
 import java.util.Arrays;
 

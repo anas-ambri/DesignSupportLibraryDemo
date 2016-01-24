@@ -1,4 +1,4 @@
-package com.verybadalloc.books.network;
+package com.verybadalloc.designlib.network;
 
 /**
  * Created by aambri on 15-06-09.

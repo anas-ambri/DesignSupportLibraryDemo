@@ -1,7 +1,7 @@
-package com.verybadalloc.books.views;
+package com.verybadalloc.designlib.views;
 
 import com.hannesdorfmann.mosby.mvp.lce.MvpLceView;
-import com.verybadalloc.books.model.Book;
+import com.verybadalloc.designlib.model.Book;
 
 /**
  * Created by aambri on 15-06-09.

@@ -1,4 +1,4 @@
-package com.verybadalloc.books;
+package com.verybadalloc.designlib;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

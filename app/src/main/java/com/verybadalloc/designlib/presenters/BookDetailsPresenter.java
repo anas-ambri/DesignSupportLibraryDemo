@@ -1,7 +1,7 @@
-package com.verybadalloc.books.presenters;
+package com.verybadalloc.designlib.presenters;
 
 import com.hannesdorfmann.mosby.mvp.MvpBasePresenter;
-import com.verybadalloc.books.views.BookDetailsView;
+import com.verybadalloc.designlib.views.BookDetailsView;
 
 /**
  * Created by aambri on 15-06-09.

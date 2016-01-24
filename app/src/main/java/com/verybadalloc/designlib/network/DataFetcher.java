@@ -1,7 +1,7 @@
-package com.verybadalloc.books.network;
+package com.verybadalloc.designlib.network;
 
 import com.google.gson.Gson;
-import com.verybadalloc.books.model.Book;
+import com.verybadalloc.designlib.model.Book;
 
 /**
  * Created by aambri on 15-06-06.

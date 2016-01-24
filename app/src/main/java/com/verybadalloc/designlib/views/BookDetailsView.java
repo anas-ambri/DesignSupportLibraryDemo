@@ -1,4 +1,4 @@
-package com.verybadalloc.books.views;
+package com.verybadalloc.designlib.views;
 
 import com.hannesdorfmann.mosby.mvp.MvpView;
 

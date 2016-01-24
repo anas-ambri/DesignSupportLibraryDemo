@@ -1,4 +1,4 @@
-package com.verybadalloc.books.events;
+package com.verybadalloc.designlib.events;
 
 import com.squareup.otto.Bus;
 

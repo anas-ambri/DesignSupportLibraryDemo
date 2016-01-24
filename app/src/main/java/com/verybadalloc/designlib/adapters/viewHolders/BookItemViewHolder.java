@@ -1,14 +1,14 @@
-package com.verybadalloc.books.adapters.viewHolders;
+package com.verybadalloc.designlib.adapters.viewHolders;
 
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
-import com.verybadalloc.books.R;
-import com.verybadalloc.books.events.BookSelected;
-import com.verybadalloc.books.events.BusProvider;
-import com.verybadalloc.books.model.Book;
+import com.verybadalloc.designlib.R;
+import com.verybadalloc.designlib.events.BookSelected;
+import com.verybadalloc.designlib.events.BusProvider;
+import com.verybadalloc.designlib.model.Book;
 
 import uk.co.ribot.easyadapter.ItemViewHolder;
 import uk.co.ribot.easyadapter.PositionInfo;

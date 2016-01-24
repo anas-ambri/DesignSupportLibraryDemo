@@ -1,4 +1,4 @@
-package com.verybadalloc.books.views;
+package com.verybadalloc.designlib.views;
 
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -7,11 +7,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import com.hannesdorfmann.mosby.mvp.lce.MvpLceFragment;
-import com.verybadalloc.books.R;
-import com.verybadalloc.books.adapters.BooksAdapter;
-import com.verybadalloc.books.adapters.viewHolders.BookItemViewHolder;
-import com.verybadalloc.books.model.Book;
-import com.verybadalloc.books.presenters.BooksListPresenter;
+import com.verybadalloc.designlib.R;
+import com.verybadalloc.designlib.adapters.BooksAdapter;
+import com.verybadalloc.designlib.adapters.viewHolders.BookItemViewHolder;
+import com.verybadalloc.designlib.model.Book;
+import com.verybadalloc.designlib.presenters.BooksListPresenter;
 
 import butterknife.InjectView;
 

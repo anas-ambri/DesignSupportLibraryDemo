@@ -1,4 +1,4 @@
-package com.verybadalloc.books.views;
+package com.verybadalloc.designlib.views;
 
 import android.os.Bundle;
 import android.view.View;
@@ -8,9 +8,9 @@ import android.widget.TextView;
 import com.hannesdorfmann.fragmentargs.annotation.Arg;
 import com.hannesdorfmann.mosby.mvp.MvpFragment;
 import com.squareup.picasso.Picasso;
-import com.verybadalloc.books.R;
-import com.verybadalloc.books.model.Book;
-import com.verybadalloc.books.presenters.BookDetailsPresenter;
+import com.verybadalloc.designlib.R;
+import com.verybadalloc.designlib.model.Book;
+import com.verybadalloc.designlib.presenters.BookDetailsPresenter;
 
 import butterknife.InjectView;
 import icepick.Icicle;

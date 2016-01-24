@@ -1,6 +1,6 @@
-package com.verybadalloc.books.events;
+package com.verybadalloc.designlib.events;
 
-import com.verybadalloc.books.model.Book;
+import com.verybadalloc.designlib.model.Book;
 
 /**
  * Created by aambri on 15-06-10.

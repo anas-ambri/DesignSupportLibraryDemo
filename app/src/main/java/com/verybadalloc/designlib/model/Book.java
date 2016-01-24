@@ -1,4 +1,4 @@
-package com.verybadalloc.books.model;
+package com.verybadalloc.designlib.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;

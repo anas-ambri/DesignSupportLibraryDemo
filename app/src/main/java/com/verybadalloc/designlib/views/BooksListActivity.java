@@ -1,4 +1,4 @@
-package com.verybadalloc.books.views;
+package com.verybadalloc.designlib.views;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,9 +7,9 @@ import android.support.v4.app.FragmentActivity;
 
 import com.squareup.otto.Bus;
 import com.squareup.otto.Subscribe;
-import com.verybadalloc.books.R;
-import com.verybadalloc.books.events.BookSelected;
-import com.verybadalloc.books.events.BusProvider;
+import com.verybadalloc.designlib.R;
+import com.verybadalloc.designlib.events.BookSelected;
+import com.verybadalloc.designlib.events.BusProvider;
 
 
 /**
