@@ -26,6 +26,8 @@ public class BookItemViewHolder extends ItemViewHolder<Book> {
     TextView author;
     @ViewId(R.id.book_name)
     TextView name;
+    @ViewId(R.id.book_type)
+    TextView type;
 
 
     public BookItemViewHolder(View view) {
@@ -42,6 +44,7 @@ public class BookItemViewHolder extends ItemViewHolder<Book> {
         Picasso.with(this.getContext()).load(book.imgUrl).into(image);
         name.setText(book.name);
         author.setText(book.author);
+        type.setText(book.type);
 
         getView().setOnClickListener(new View.OnClickListener() {
             @Override

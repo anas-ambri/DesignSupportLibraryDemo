@@ -19,6 +19,8 @@ public class Book implements Parcelable {
 
     public String author;
 
+    public String type;
+
     @Override public int describeContents() {
         return 0;
     }
