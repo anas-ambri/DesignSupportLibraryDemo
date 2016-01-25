@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.hannesdorfmann.fragmentargs.annotation.Arg;
 import com.hannesdorfmann.mosby.mvp.MvpFragment;
@@ -13,6 +14,7 @@ import com.verybadalloc.designlib.model.Book;
 import com.verybadalloc.designlib.presenters.BookDetailsPresenter;
 
 import butterknife.InjectView;
+import butterknife.OnClick;
 import icepick.Icicle;
 
 /**
@@ -33,6 +35,10 @@ public class BookDetailsFragment extends MvpFragment<BookDetailsView, BookDetail
     TextView bookName;
     @InjectView(R.id.book_author)
     TextView bookAuthor;
+    @OnClick(R.id.book_add_cart)
+    void addToCart (){
+        Toast.makeText(getActivity(), "Book added to cart!", Toast.LENGTH_LONG).show();
+    }
 
     public static final String BOOK = "book";
 

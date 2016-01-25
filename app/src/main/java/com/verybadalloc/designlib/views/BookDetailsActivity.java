@@ -32,7 +32,9 @@ public class BookDetailsActivity extends AppCompatActivity {
         }
 
         // Show the Up button in the action bar.
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
 
         if (savedInstanceState == null) {
             Fragment fragment = new BookDetailsFragmentBuilder(book).build();
