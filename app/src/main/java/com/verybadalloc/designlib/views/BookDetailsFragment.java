@@ -1,10 +1,11 @@
 package com.verybadalloc.designlib.views;
 
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.hannesdorfmann.fragmentargs.annotation.Arg;
 import com.hannesdorfmann.mosby.mvp.MvpFragment;
@@ -26,6 +27,8 @@ import icepick.Icicle;
 public class BookDetailsFragment extends MvpFragment<BookDetailsView, BookDetailsPresenter>
     implements BookDetailsView {
 
+    private boolean bookAdded = false;
+
     @Icicle
     @Arg
     Book book;
@@ -35,9 +38,17 @@ public class BookDetailsFragment extends MvpFragment<BookDetailsView, BookDetail
     TextView bookName;
     @InjectView(R.id.book_author)
     TextView bookAuthor;
-    @OnClick(R.id.book_add_cart)
+    @InjectView(R.id.fab)
+    FloatingActionButton fab;
+    @OnClick(R.id.fab)
     void addToCart (){
-        Toast.makeText(getActivity(), "Book added to cart!", Toast.LENGTH_LONG).show();
+        if (!bookAdded) {
+            bookAdded = true;
+            displayError("Book added to cart!");
+        } else {
+            displayError("Book already added. Cannot be added again!");
+        }
+
     }
 
     public static final String BOOK = "book";
@@ -59,5 +70,10 @@ public class BookDetailsFragment extends MvpFragment<BookDetailsView, BookDetail
         bookAuthor.setText(book.author);
         Picasso.with(getActivity()).load(book.imgUrl).into(bookImage);
         getActivity().setTitle(book.name);
+    }
+
+    private void displayError(String error) {
+        Snackbar.make(fab, error, Snackbar.LENGTH_LONG).show();
+        //Toast.makeText(getActivity(), error, Toast.LENGTH_LONG).show();
     }
 }
