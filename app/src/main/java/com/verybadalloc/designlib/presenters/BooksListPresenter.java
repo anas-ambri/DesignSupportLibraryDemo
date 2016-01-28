@@ -14,13 +14,39 @@ public class BooksListPresenter extends MvpBasePresenter<BooksListView> {
 
     private static final String TAG = "BooksListPresenter";
 
-    public void loadEateries(final boolean pullToRefresh) {
+    public void loadBooks(final boolean pullToRefresh) {
 
         if(isViewAttached()) {
             getView().showLoading(pullToRefresh);
         }
 
         DataFetcher.getBooks(new DataCallback<Book[]>() {
+
+            @Override
+            public void onSuccess(Book[] books) {
+                if (isViewAttached()) {
+                    getView().setData(books);
+                    getView().showContent();
+                }
+            }
+
+            @Override
+            public void onFailure(String reason) {
+                String message = "Failed to load books because " + reason;
+                if (isViewAttached()) {
+                    getView().showError(new Throwable(message), pullToRefresh);
+                }
+            }
+        });
+    }
+
+    public void loadBooksOfType(String bookType, final boolean pullToRefresh) {
+
+        if(isViewAttached()) {
+            getView().showLoading(pullToRefresh);
+        }
+
+        DataFetcher.getBooksOfType(bookType, new DataCallback<Book[]>() {
 
             @Override
             public void onSuccess(Book[] books) {
