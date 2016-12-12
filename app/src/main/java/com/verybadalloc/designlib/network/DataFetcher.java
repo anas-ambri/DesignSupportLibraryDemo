@@ -12,7 +12,7 @@ import java.util.List;
 
 public class DataFetcher {
 
-    private static final String BOOKS_API = "http://verybadalloc.com/downloads/data/apps/com_verybadalloc_designlib.json";
+    private static final String BOOKS_API = "http://anasambri.com/downloads/data/apps/com_verybadalloc_designlib.json";
 
     public static void getBooks(final DataCallback<Book[]> callback) {
         HttpRestClient.get(BOOKS_API, null, new NetworkCallback() {
